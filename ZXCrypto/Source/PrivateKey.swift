@@ -38,7 +38,7 @@ public class PrivateKey: Key {
         
         guard CryptoRSA.isValidKeyReference(reference, forClass: kSecAttrKeyClassPrivate) else {
 //            throw CryptoRSAError.notAPrivateKey
-            throw CryptoError.notAPrivateKey
+            throw CryptoRSAError.notAPrivateKey
         }
         
         self.reference = reference

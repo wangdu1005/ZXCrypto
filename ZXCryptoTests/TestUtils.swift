@@ -76,23 +76,23 @@ struct TestError: Error {
         return Data(bytes: randomBytes)
     }
     
-    static func assertThrows(type: CryptoError, file: StaticString = #file, line: UInt = #line, block: () throws ->  Void) {
+    static func assertThrows(type: CryptoRSAError, file: StaticString = #file, line: UInt = #line, block: () throws ->  Void) {
         do {
             try block()
             XCTFail("The line above should fail", file: file, line: line)
         } catch {
-            guard let ZXCryptoError = error as? CryptoError else {
-                return XCTFail("Error is not a ZXCryptoError", file: file, line: line)
+            guard let ZXCryptoRSAError = error as? CryptoRSAError else {
+                return XCTFail("Error is not a ZXCryptoRSAError", file: file, line: line)
             }
-            XCTAssertEqual(ZXCryptoError, type, file: file, line: line)
+            XCTAssertEqual(ZXCryptoRSAError, type, file: file, line: line)
         }
     }
 }
 // swiftlint:enable force_try
 // swiftlint:enable force_unwrapping
 
-extension CryptoError: Equatable {
-    public static func == (lhs: CryptoError, rhs: CryptoError) -> Bool {
+extension CryptoRSAError: Equatable {
+    public static func == (lhs: CryptoRSAError, rhs: CryptoRSAError) -> Bool {
         switch (lhs, rhs) {
         case
         (.pemDoesNotContainKey, .pemDoesNotContainKey),

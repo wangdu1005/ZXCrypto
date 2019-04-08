@@ -22,7 +22,6 @@
 		392C7C63225B192A003F2FE5 /* CryptoRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C55225B1929003F2FE5 /* CryptoRSA.swift */; };
 		392C7C64225B192A003F2FE5 /* CryptoRSA+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C56225B1929003F2FE5 /* CryptoRSA+ObjC.swift */; };
 		392C7C65225B192A003F2FE5 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C57225B1929003F2FE5 /* Signature.swift */; };
-		392C7C66225B192A003F2FE5 /* CryptoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C58225B1929003F2FE5 /* CryptoError.swift */; };
 		392C7C67225B192A003F2FE5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C59225B1929003F2FE5 /* Message.swift */; };
 		392C7C74225B195E003F2FE5 /* cryptorsa-public.der in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C69225B195D003F2FE5 /* cryptorsa-public.der */; };
 		392C7C75225B195E003F2FE5 /* cryptorsa-private-headerless.pem in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C6A225B195D003F2FE5 /* cryptorsa-private-headerless.pem */; };
@@ -72,7 +71,6 @@
 		392C7C55225B1929003F2FE5 /* CryptoRSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoRSA.swift; sourceTree = "<group>"; };
 		392C7C56225B1929003F2FE5 /* CryptoRSA+ObjC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CryptoRSA+ObjC.swift"; sourceTree = "<group>"; };
 		392C7C57225B1929003F2FE5 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
-		392C7C58225B1929003F2FE5 /* CryptoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoError.swift; sourceTree = "<group>"; };
 		392C7C59225B1929003F2FE5 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		392C7C69225B195D003F2FE5 /* cryptorsa-public.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cryptorsa-public.der"; sourceTree = "<group>"; };
 		392C7C6A225B195D003F2FE5 /* cryptorsa-private-headerless.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cryptorsa-private-headerless.pem"; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 			children = (
 				392C7C54225B1929003F2FE5 /* Asn1Parser.swift */,
 				392C7C50225B1928003F2FE5 /* ClearMessage.swift */,
-				392C7C58225B1929003F2FE5 /* CryptoError.swift */,
 				392C7C55225B1929003F2FE5 /* CryptoRSA.swift */,
 				392C7C56225B1929003F2FE5 /* CryptoRSA+ObjC.swift */,
 				392C7C51225B1928003F2FE5 /* CryptoRSAError.swift */,
@@ -339,7 +336,6 @@
 				392C7C67225B192A003F2FE5 /* Message.swift in Sources */,
 				392C7C5C225B1929003F2FE5 /* PrivateKey.swift in Sources */,
 				392C7C5E225B1929003F2FE5 /* ClearMessage.swift in Sources */,
-				392C7C66225B192A003F2FE5 /* CryptoError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

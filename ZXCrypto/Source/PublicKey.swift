@@ -40,7 +40,7 @@ public class PublicKey: Key {
         
         guard CryptoRSA.isValidKeyReference(reference, forClass: kSecAttrKeyClassPublic) else {
 //            throw CryptoRSAError.notAPublicKey
-            throw CryptoError.notAPublicKey
+            throw CryptoRSAError.notAPublicKey
         }
         
         self.reference = reference

@@ -39,7 +39,7 @@ class PublicKeyTests: XCTestCase {
         let str = try String(contentsOf: URL(fileURLWithPath: path), encoding: .utf8)
         let privateKey = try PrivateKey(pemEncoded: str)
         
-        TestUtils.assertThrows(type: CryptoError.notAPublicKey) {
+        TestUtils.assertThrows(type: CryptoRSAError.notAPublicKey) {
             _ = try PublicKey(reference: privateKey.reference)
         }
     }
@@ -191,7 +191,7 @@ class PrivateKeyTests: XCTestCase {
         let data = try Data(contentsOf: URL(fileURLWithPath: path))
         let publicKey = try PublicKey(data: data)
         
-        TestUtils.assertThrows(type: CryptoError.notAPrivateKey) {
+        TestUtils.assertThrows(type: CryptoRSAError.notAPrivateKey) {
             _ = try PrivateKey(reference: publicKey.reference)
         }
     }
