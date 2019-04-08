@@ -10,6 +10,37 @@
 		392C7C39225B1889003F2FE5 /* ZXCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392C7C2F225B1889003F2FE5 /* ZXCrypto.framework */; };
 		392C7C3E225B1889003F2FE5 /* ZXCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C3D225B1889003F2FE5 /* ZXCryptoTests.swift */; };
 		392C7C40225B1889003F2FE5 /* ZXCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 392C7C32225B1889003F2FE5 /* ZXCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		392C7C5A225B1929003F2FE5 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C4C225B1928003F2FE5 /* PublicKey.swift */; };
+		392C7C5B225B1929003F2FE5 /* NSData+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C4D225B1928003F2FE5 /* NSData+SHA.m */; };
+		392C7C5C225B1929003F2FE5 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C4E225B1928003F2FE5 /* PrivateKey.swift */; };
+		392C7C5D225B1929003F2FE5 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C4F225B1928003F2FE5 /* Key.swift */; };
+		392C7C5E225B1929003F2FE5 /* ClearMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C50225B1928003F2FE5 /* ClearMessage.swift */; };
+		392C7C5F225B1929003F2FE5 /* CryptoRSAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C51225B1928003F2FE5 /* CryptoRSAError.swift */; };
+		392C7C60225B1929003F2FE5 /* NSData+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 392C7C52225B1928003F2FE5 /* NSData+SHA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		392C7C61225B1929003F2FE5 /* EncryptedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C53225B1929003F2FE5 /* EncryptedMessage.swift */; };
+		392C7C62225B1929003F2FE5 /* Asn1Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C54225B1929003F2FE5 /* Asn1Parser.swift */; };
+		392C7C63225B192A003F2FE5 /* CryptoRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C55225B1929003F2FE5 /* CryptoRSA.swift */; };
+		392C7C64225B192A003F2FE5 /* CryptoRSA+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C56225B1929003F2FE5 /* CryptoRSA+ObjC.swift */; };
+		392C7C65225B192A003F2FE5 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C57225B1929003F2FE5 /* Signature.swift */; };
+		392C7C66225B192A003F2FE5 /* CryptoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C58225B1929003F2FE5 /* CryptoError.swift */; };
+		392C7C67225B192A003F2FE5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C59225B1929003F2FE5 /* Message.swift */; };
+		392C7C74225B195E003F2FE5 /* cryptorsa-public.der in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C69225B195D003F2FE5 /* cryptorsa-public.der */; };
+		392C7C75225B195E003F2FE5 /* cryptorsa-private-headerless.pem in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C6A225B195D003F2FE5 /* cryptorsa-private-headerless.pem */; };
+		392C7C76225B195E003F2FE5 /* cryptorsa-private-header-octetstring.pem in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C6B225B195D003F2FE5 /* cryptorsa-private-header-octetstring.pem */; };
+		392C7C77225B195E003F2FE5 /* multiple-keys-testcase.pem in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C6C225B195E003F2FE5 /* multiple-keys-testcase.pem */; };
+		392C7C78225B195E003F2FE5 /* multiple-keys-testcase.sh in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C6D225B195E003F2FE5 /* multiple-keys-testcase.sh */; };
+		392C7C79225B195E003F2FE5 /* cryptorsa-public-base64.txt in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C6E225B195E003F2FE5 /* cryptorsa-public-base64.txt */; };
+		392C7C7A225B195E003F2FE5 /* cryptorsa-public-base64-newlines.txt in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C6F225B195E003F2FE5 /* cryptorsa-public-base64-newlines.txt */; };
+		392C7C7B225B195E003F2FE5 /* cryptorsa-private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C70225B195E003F2FE5 /* cryptorsa-private.pem */; };
+		392C7C7C225B195E003F2FE5 /* cryptorsa-public-headerless.pem in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C71225B195E003F2FE5 /* cryptorsa-public-headerless.pem */; };
+		392C7C7D225B195E003F2FE5 /* cryptorsa-private.der in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C72225B195E003F2FE5 /* cryptorsa-private.der */; };
+		392C7C7E225B195E003F2FE5 /* cryptorsa-public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 392C7C73225B195E003F2FE5 /* cryptorsa-public.pem */; };
+		392C7C86225B197E003F2FE5 /* MessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C80225B197D003F2FE5 /* MessageTests.swift */; };
+		392C7C87225B197E003F2FE5 /* ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C81225B197E003F2FE5 /* ObjCTests.m */; };
+		392C7C88225B197E003F2FE5 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C82225B197E003F2FE5 /* SignatureTests.swift */; };
+		392C7C89225B197E003F2FE5 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C83225B197E003F2FE5 /* TestUtils.swift */; };
+		392C7C8A225B197E003F2FE5 /* KeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C84225B197E003F2FE5 /* KeyTests.swift */; };
+		392C7C8B225B197E003F2FE5 /* EncryptDecryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C85225B197E003F2FE5 /* EncryptDecryptTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +60,38 @@
 		392C7C38225B1889003F2FE5 /* ZXCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		392C7C3D225B1889003F2FE5 /* ZXCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXCryptoTests.swift; sourceTree = "<group>"; };
 		392C7C3F225B1889003F2FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		392C7C4C225B1928003F2FE5 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		392C7C4D225B1928003F2FE5 /* NSData+SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SHA.m"; sourceTree = "<group>"; };
+		392C7C4E225B1928003F2FE5 /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		392C7C4F225B1928003F2FE5 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		392C7C50225B1928003F2FE5 /* ClearMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearMessage.swift; sourceTree = "<group>"; };
+		392C7C51225B1928003F2FE5 /* CryptoRSAError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoRSAError.swift; sourceTree = "<group>"; };
+		392C7C52225B1928003F2FE5 /* NSData+SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SHA.h"; sourceTree = "<group>"; };
+		392C7C53225B1929003F2FE5 /* EncryptedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptedMessage.swift; sourceTree = "<group>"; };
+		392C7C54225B1929003F2FE5 /* Asn1Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asn1Parser.swift; sourceTree = "<group>"; };
+		392C7C55225B1929003F2FE5 /* CryptoRSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoRSA.swift; sourceTree = "<group>"; };
+		392C7C56225B1929003F2FE5 /* CryptoRSA+ObjC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CryptoRSA+ObjC.swift"; sourceTree = "<group>"; };
+		392C7C57225B1929003F2FE5 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		392C7C58225B1929003F2FE5 /* CryptoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoError.swift; sourceTree = "<group>"; };
+		392C7C59225B1929003F2FE5 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		392C7C69225B195D003F2FE5 /* cryptorsa-public.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cryptorsa-public.der"; sourceTree = "<group>"; };
+		392C7C6A225B195D003F2FE5 /* cryptorsa-private-headerless.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cryptorsa-private-headerless.pem"; sourceTree = "<group>"; };
+		392C7C6B225B195D003F2FE5 /* cryptorsa-private-header-octetstring.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cryptorsa-private-header-octetstring.pem"; sourceTree = "<group>"; };
+		392C7C6C225B195E003F2FE5 /* multiple-keys-testcase.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multiple-keys-testcase.pem"; sourceTree = "<group>"; };
+		392C7C6D225B195E003F2FE5 /* multiple-keys-testcase.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "multiple-keys-testcase.sh"; sourceTree = "<group>"; };
+		392C7C6E225B195E003F2FE5 /* cryptorsa-public-base64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cryptorsa-public-base64.txt"; sourceTree = "<group>"; };
+		392C7C6F225B195E003F2FE5 /* cryptorsa-public-base64-newlines.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cryptorsa-public-base64-newlines.txt"; sourceTree = "<group>"; };
+		392C7C70225B195E003F2FE5 /* cryptorsa-private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cryptorsa-private.pem"; sourceTree = "<group>"; };
+		392C7C71225B195E003F2FE5 /* cryptorsa-public-headerless.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cryptorsa-public-headerless.pem"; sourceTree = "<group>"; };
+		392C7C72225B195E003F2FE5 /* cryptorsa-private.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cryptorsa-private.der"; sourceTree = "<group>"; };
+		392C7C73225B195E003F2FE5 /* cryptorsa-public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cryptorsa-public.pem"; sourceTree = "<group>"; };
+		392C7C7F225B197C003F2FE5 /* ZXCryptoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZXCryptoTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		392C7C80225B197D003F2FE5 /* MessageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTests.swift; sourceTree = "<group>"; };
+		392C7C81225B197E003F2FE5 /* ObjCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCTests.m; sourceTree = "<group>"; };
+		392C7C82225B197E003F2FE5 /* SignatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureTests.swift; sourceTree = "<group>"; };
+		392C7C83225B197E003F2FE5 /* TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		392C7C84225B197E003F2FE5 /* KeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyTests.swift; sourceTree = "<group>"; };
+		392C7C85225B197E003F2FE5 /* EncryptDecryptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptDecryptTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +134,8 @@
 		392C7C31225B1889003F2FE5 /* ZXCrypto */ = {
 			isa = PBXGroup;
 			children = (
-				392C7C32225B1889003F2FE5 /* ZXCrypto.h */,
-				392C7C33225B1889003F2FE5 /* Info.plist */,
+				392C7C4B225B18EC003F2FE5 /* Source */,
+				392C7C49225B18C7003F2FE5 /* Supporting Files */,
 			);
 			path = ZXCrypto;
 			sourceTree = "<group>";
@@ -80,10 +143,66 @@
 		392C7C3C225B1889003F2FE5 /* ZXCryptoTests */ = {
 			isa = PBXGroup;
 			children = (
+				392C7C68225B1937003F2FE5 /* keys */,
+				392C7C85225B197E003F2FE5 /* EncryptDecryptTests.swift */,
+				392C7C84225B197E003F2FE5 /* KeyTests.swift */,
+				392C7C80225B197D003F2FE5 /* MessageTests.swift */,
+				392C7C82225B197E003F2FE5 /* SignatureTests.swift */,
+				392C7C83225B197E003F2FE5 /* TestUtils.swift */,
+				392C7C81225B197E003F2FE5 /* ObjCTests.m */,
 				392C7C3D225B1889003F2FE5 /* ZXCryptoTests.swift */,
 				392C7C3F225B1889003F2FE5 /* Info.plist */,
+				392C7C7F225B197C003F2FE5 /* ZXCryptoTests-Bridging-Header.h */,
 			);
 			path = ZXCryptoTests;
+			sourceTree = "<group>";
+		};
+		392C7C49225B18C7003F2FE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				392C7C32225B1889003F2FE5 /* ZXCrypto.h */,
+				392C7C33225B1889003F2FE5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		392C7C4B225B18EC003F2FE5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				392C7C54225B1929003F2FE5 /* Asn1Parser.swift */,
+				392C7C50225B1928003F2FE5 /* ClearMessage.swift */,
+				392C7C58225B1929003F2FE5 /* CryptoError.swift */,
+				392C7C55225B1929003F2FE5 /* CryptoRSA.swift */,
+				392C7C56225B1929003F2FE5 /* CryptoRSA+ObjC.swift */,
+				392C7C51225B1928003F2FE5 /* CryptoRSAError.swift */,
+				392C7C53225B1929003F2FE5 /* EncryptedMessage.swift */,
+				392C7C4F225B1928003F2FE5 /* Key.swift */,
+				392C7C59225B1929003F2FE5 /* Message.swift */,
+				392C7C52225B1928003F2FE5 /* NSData+SHA.h */,
+				392C7C4D225B1928003F2FE5 /* NSData+SHA.m */,
+				392C7C4E225B1928003F2FE5 /* PrivateKey.swift */,
+				392C7C4C225B1928003F2FE5 /* PublicKey.swift */,
+				392C7C57225B1929003F2FE5 /* Signature.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		392C7C68225B1937003F2FE5 /* keys */ = {
+			isa = PBXGroup;
+			children = (
+				392C7C6B225B195D003F2FE5 /* cryptorsa-private-header-octetstring.pem */,
+				392C7C6A225B195D003F2FE5 /* cryptorsa-private-headerless.pem */,
+				392C7C72225B195E003F2FE5 /* cryptorsa-private.der */,
+				392C7C70225B195E003F2FE5 /* cryptorsa-private.pem */,
+				392C7C6F225B195E003F2FE5 /* cryptorsa-public-base64-newlines.txt */,
+				392C7C6E225B195E003F2FE5 /* cryptorsa-public-base64.txt */,
+				392C7C71225B195E003F2FE5 /* cryptorsa-public-headerless.pem */,
+				392C7C69225B195D003F2FE5 /* cryptorsa-public.der */,
+				392C7C73225B195E003F2FE5 /* cryptorsa-public.pem */,
+				392C7C6C225B195E003F2FE5 /* multiple-keys-testcase.pem */,
+				392C7C6D225B195E003F2FE5 /* multiple-keys-testcase.sh */,
+			);
+			path = keys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +212,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392C7C60225B1929003F2FE5 /* NSData+SHA.h in Headers */,
 				392C7C40225B1889003F2FE5 /* ZXCrypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,9 +268,11 @@
 				TargetAttributes = {
 					392C7C2E225B1889003F2FE5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					392C7C37225B1889003F2FE5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -184,6 +306,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392C7C7A225B195E003F2FE5 /* cryptorsa-public-base64-newlines.txt in Resources */,
+				392C7C77225B195E003F2FE5 /* multiple-keys-testcase.pem in Resources */,
+				392C7C75225B195E003F2FE5 /* cryptorsa-private-headerless.pem in Resources */,
+				392C7C7D225B195E003F2FE5 /* cryptorsa-private.der in Resources */,
+				392C7C79225B195E003F2FE5 /* cryptorsa-public-base64.txt in Resources */,
+				392C7C7E225B195E003F2FE5 /* cryptorsa-public.pem in Resources */,
+				392C7C7B225B195E003F2FE5 /* cryptorsa-private.pem in Resources */,
+				392C7C74225B195E003F2FE5 /* cryptorsa-public.der in Resources */,
+				392C7C78225B195E003F2FE5 /* multiple-keys-testcase.sh in Resources */,
+				392C7C76225B195E003F2FE5 /* cryptorsa-private-header-octetstring.pem in Resources */,
+				392C7C7C225B195E003F2FE5 /* cryptorsa-public-headerless.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +327,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392C7C5F225B1929003F2FE5 /* CryptoRSAError.swift in Sources */,
+				392C7C5A225B1929003F2FE5 /* PublicKey.swift in Sources */,
+				392C7C5D225B1929003F2FE5 /* Key.swift in Sources */,
+				392C7C65225B192A003F2FE5 /* Signature.swift in Sources */,
+				392C7C62225B1929003F2FE5 /* Asn1Parser.swift in Sources */,
+				392C7C5B225B1929003F2FE5 /* NSData+SHA.m in Sources */,
+				392C7C61225B1929003F2FE5 /* EncryptedMessage.swift in Sources */,
+				392C7C63225B192A003F2FE5 /* CryptoRSA.swift in Sources */,
+				392C7C64225B192A003F2FE5 /* CryptoRSA+ObjC.swift in Sources */,
+				392C7C67225B192A003F2FE5 /* Message.swift in Sources */,
+				392C7C5C225B1929003F2FE5 /* PrivateKey.swift in Sources */,
+				392C7C5E225B1929003F2FE5 /* ClearMessage.swift in Sources */,
+				392C7C66225B192A003F2FE5 /* CryptoError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392C7C88225B197E003F2FE5 /* SignatureTests.swift in Sources */,
 				392C7C3E225B1889003F2FE5 /* ZXCryptoTests.swift in Sources */,
+				392C7C86225B197E003F2FE5 /* MessageTests.swift in Sources */,
+				392C7C8A225B197E003F2FE5 /* KeyTests.swift in Sources */,
+				392C7C8B225B197E003F2FE5 /* EncryptDecryptTests.swift in Sources */,
+				392C7C89225B197E003F2FE5 /* TestUtils.swift in Sources */,
+				392C7C87225B197E003F2FE5 /* ObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +493,7 @@
 		392C7C44225B1889003F2FE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +511,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zx.ZXCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +520,7 @@
 		392C7C45225B1889003F2FE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,16 +546,28 @@
 		392C7C47225B1889003F2FE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
+				CLANG_WARN_VEXING_PARSE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J73WV857ZD;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = ZXCryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zx.ZXCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZXCryptoTests/ZXCryptoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,8 +576,16 @@
 		392C7C48225B1889003F2FE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
+				CLANG_WARN_VEXING_PARSE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J73WV857ZD;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = ZXCryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,6 +594,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zx.ZXCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZXCryptoTests/ZXCryptoTests-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
