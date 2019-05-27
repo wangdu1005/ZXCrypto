@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.author       = "ZX"
 
   s.platform     = :ios
-  # s.source       = { :git => "http://EXAMPLE/ZXCrypto.git", :tag => "#{s.version}" }
+  # s.source       = { :git => "https://wangdu1005@bitbucket.org/wangdu1005/zxcrypto.git", :tag => "#{s.version}" }
   s.source       = { :path => '.' }
-  s.source_files  = "ZXCrypto"
+  s.source_files  = "ZXCrypto/**/*.{swift,h,m}"
   s.swift_version = "4.2" 
 
 end

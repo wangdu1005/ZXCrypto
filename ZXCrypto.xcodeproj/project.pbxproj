@@ -6,20 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		392BA89B229B982400AFC0C7 /* UniversalZXCrypto */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 392BA89C229B982500AFC0C7 /* Build configuration list for PBXAggregateTarget "UniversalZXCrypto" */;
-			buildPhases = (
-				392BA89F229B984100AFC0C7 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = UniversalZXCrypto;
-			productName = UniZXCrypto;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		392C7C39225B1889003F2FE5 /* ZXCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392C7C2F225B1889003F2FE5 /* ZXCrypto.framework */; };
 		392C7C3E225B1889003F2FE5 /* ZXCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C3D225B1889003F2FE5 /* ZXCryptoTests.swift */; };
@@ -277,9 +263,6 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = zx;
 				TargetAttributes = {
-					392BA89B229B982400AFC0C7 = {
-						CreatedOnToolsVersion = 10.1;
-					};
 					392C7C2E225B1889003F2FE5 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -304,7 +287,6 @@
 			targets = (
 				392C7C2E225B1889003F2FE5 /* ZXCrypto */,
 				392C7C37225B1889003F2FE5 /* ZXCryptoTests */,
-				392BA89B229B982400AFC0C7 /* UniversalZXCrypto */,
 			);
 		};
 /* End PBXProject section */
@@ -336,26 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		392BA89F229B984100AFC0C7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"ZXCrypto\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"ZXCrypto\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/ZXCrypto.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/ZXCrypto.framework/Modules/ZXCrypto.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/ZXCrypto.framework/Modules/ZXCrypto.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/ZXCrypto.framework/ZXCrypto\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/ZXCrypto.framework/ZXCrypto\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/ZXCrypto.framework/ZXCrypto\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/ZXCrypto.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		392C7C2B225B1889003F2FE5 /* Sources */ = {
@@ -402,24 +364,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		392BA89D229B982500AFC0C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J73WV857ZD;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		392BA89E229B982500AFC0C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J73WV857ZD;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		392C7C41225B1889003F2FE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -658,15 +602,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		392BA89C229B982500AFC0C7 /* Build configuration list for PBXAggregateTarget "UniversalZXCrypto" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				392BA89D229B982500AFC0C7 /* Debug */,
-				392BA89E229B982500AFC0C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		392C7C29225B1889003F2FE5 /* Build configuration list for PBXProject "ZXCrypto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
