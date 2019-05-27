@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "ZX"
 
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
   s.source       = { :git => "https://wangdu1005@bitbucket.org/wangdu1005/zxcrypto.git", :tag => "#{s.version}" }
   s.source_files  = "ZXCrypto/**/*.{swift,h,m}"
   s.swift_version = "4.2" 
