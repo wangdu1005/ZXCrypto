@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZXCrypto"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A simple RSA crypto lib."
   s.description  = "A simple RSA crypto lib. Reference: SwiftRSA & BlueRSA"
 
