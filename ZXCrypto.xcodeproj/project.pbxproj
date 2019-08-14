@@ -118,6 +118,8 @@
 		392C7C25225B1889003F2FE5 = {
 			isa = PBXGroup;
 			children = (
+				39D9CA8D2303B82300D94918 /* README.md */,
+				39D9CA8F2303E01100D94918 /* LICENSE */,
 				392C7C31225B1889003F2FE5 /* ZXCrypto */,
 				392C7C3C225B1889003F2FE5 /* ZXCryptoTests */,
 				392C7C30225B1889003F2FE5 /* Products */,
@@ -138,8 +140,6 @@
 			children = (
 				392C7C4B225B18EC003F2FE5 /* Source */,
 				392C7C49225B18C7003F2FE5 /* Supporting Files */,
-				39D9CA8D2303B82300D94918 /* README.md */,
-				39D9CA8F2303E01100D94918 /* LICENSE */,
 			);
 			path = ZXCrypto;
 			sourceTree = "<group>";
