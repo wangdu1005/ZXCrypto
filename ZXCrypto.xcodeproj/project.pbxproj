@@ -40,6 +40,8 @@
 		392C7C89225B197E003F2FE5 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C83225B197E003F2FE5 /* TestUtils.swift */; };
 		392C7C8A225B197E003F2FE5 /* KeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C84225B197E003F2FE5 /* KeyTests.swift */; };
 		392C7C8B225B197E003F2FE5 /* EncryptDecryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C7C85225B197E003F2FE5 /* EncryptDecryptTests.swift */; };
+		39D9CA8E2303B82300D94918 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 39D9CA8D2303B82300D94918 /* README.md */; };
+		39D9CA902303E01100D94918 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 39D9CA8F2303E01100D94918 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		392C7C83225B197E003F2FE5 /* TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 		392C7C84225B197E003F2FE5 /* KeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyTests.swift; sourceTree = "<group>"; };
 		392C7C85225B197E003F2FE5 /* EncryptDecryptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptDecryptTests.swift; sourceTree = "<group>"; };
+		39D9CA8D2303B82300D94918 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		39D9CA8F2303E01100D94918 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			children = (
 				392C7C4B225B18EC003F2FE5 /* Source */,
 				392C7C49225B18C7003F2FE5 /* Supporting Files */,
+				39D9CA8D2303B82300D94918 /* README.md */,
+				39D9CA8F2303E01100D94918 /* LICENSE */,
 			);
 			path = ZXCrypto;
 			sourceTree = "<group>";
@@ -297,6 +303,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D9CA902303E01100D94918 /* LICENSE in Resources */,
+				39D9CA8E2303B82300D94918 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
